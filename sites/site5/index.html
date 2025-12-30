@@ -10,7 +10,7 @@
       --card: #111827;
       --text: #e5e7eb;
       --muted: #9ca3af;
-      --accent: #38bdf8;
+      --accent: #d4af37; /* gold accent to match logo */
     }
 
     * {
@@ -33,31 +33,39 @@
       max-width: 900px;
       width: 90%;
       background: var(--card);
-      border-radius: 14px;
+      border-radius: 16px;
       padding: 40px;
       box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
     }
 
     header {
+      text-align: center;
       border-bottom: 1px solid #1f2937;
-      padding-bottom: 20px;
-      margin-bottom: 30px;
+      padding-bottom: 25px;
+      margin-bottom: 35px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.6rem;
       color: var(--accent);
+      letter-spacing: 0.5px;
     }
 
     header p {
-      margin: 6px 0 0;
+      margin-top: 8px;
       color: var(--muted);
       font-size: 1.1rem;
     }
 
+    .logo {
+      max-width: 130px;
+      margin: 25px auto 0;
+      display: block;
+    }
+
     section {
-      margin-bottom: 32px;
+      margin-bottom: 35px;
     }
 
     section h2 {
@@ -68,8 +76,8 @@
     }
 
     section p {
+      line-height: 1.7;
       color: var(--text);
-      line-height: 1.6;
     }
 
     ul {
@@ -77,22 +85,21 @@
     }
 
     ul li {
-      margin-bottom: 8px;
-      color: var(--text);
+      margin-bottom: 10px;
     }
 
     .tags {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     .tag {
       background: #020617;
       border: 1px solid #1f2937;
       color: var(--accent);
-      padding: 6px 12px;
+      padding: 6px 14px;
       border-radius: 999px;
       font-size: 0.9rem;
     }
@@ -130,21 +137,22 @@
     <header>
       <h1>Ethan Tong</h1>
       <p>Computer Science • Cloud Computing • Software Engineering</p>
+      <img src="CSCE412_logo.png" alt="CT Logo" class="logo">
     </header>
 
     <section>
       <h2>About Me</h2>
       <p>
-        I am a Computer Science student with a strong interest in cloud computing,
+        I am a Computer Science student with strong interests in cloud computing,
         software engineering, and financial technology. I enjoy building scalable,
-        repeatable systems and exploring modern infrastructure tools such as Docker,
-        container orchestration, and cloud platforms.
+        repeatable systems and working with modern infrastructure tools such as
+        Docker, container orchestration, and cloud platforms.
       </p>
 
       <div class="tags">
-        <div class="tag">Cloud Computing</div>
         <div class="tag">Docker</div>
         <div class="tag">AWS</div>
+        <div class="tag">Cloud Engineering</div>
         <div class="tag">Backend Systems</div>
         <div class="tag">FinTech</div>
       </div>
@@ -153,19 +161,25 @@
     <section>
       <h2>Projects</h2>
       <ul>
-        <li><strong>Dockerized Nginx Multi-Service Deployment</strong> — Containerized
-            web services deployed on AWS using Docker and Docker Compose.</li>
-        <li><strong>Online Bookstore Management System</strong> — Full-stack application
-            with database-backed inventory and order management.</li>
-        <li><strong>Data Dashboards & Automation</strong> — Analytics and automation
-            projects focused on efficiency and visualization.</li>
+        <li>
+          <strong>Dockerized Nginx Multi-Service Deployment</strong> —
+          Multiple containerized web services deployed on AWS using Docker and Docker Compose.
+        </li>
+        <li>
+          <strong>Online Bookstore Management System</strong> —
+          Full-stack application featuring inventory management, order processing, and authentication.
+        </li>
+        <li>
+          <strong>Data Dashboards & Automation</strong> —
+          Analytics dashboards and automation tools focused on efficiency and insights.
+        </li>
       </ul>
     </section>
 
     <footer>
       <div>
         <strong>Contact</strong><br>
-        <span class="note">your-email@example.com</span>
+        <span class="note">ethantongg.com</span>
       </div>
 
       <div>
