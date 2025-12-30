@@ -1,25 +1,182 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Ethan Tong - Personal Site</title>
+  <title>Ethan Tong | Cloud & Software Engineer</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 90%;
+      background: var(--card);
+      border-radius: 14px;
+      padding: 40px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    header {
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    header p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    section h2 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    section p {
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      background: #020617;
+      border: 1px solid #1f2937;
+      color: var(--accent);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      border-top: 1px solid #1f2937;
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Ethan Tong</h1>
-  <p>Welcome to my personal site hosted in an Nginx Docker container on AWS.</p>
+  <div class="container">
 
-  <h2>About Me</h2>
-  <p>I’m a Computer Science student with interests in cloud computing, software engineering, and finance technology.</p>
+    <header>
+      <h1>Ethan Tong</h1>
+      <p>Computer Science • Cloud Computing • Software Engineering</p>
+    </header>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Dockerized Nginx Multi-Service Deployment (this project)</li>
-    <li>Online Bookstore Management System</li>
-    <li>Data dashboards and automation projects</li>
-  </ul>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science student with a strong interest in cloud computing,
+        software engineering, and financial technology. I enjoy building scalable,
+        repeatable systems and exploring modern infrastructure tools such as Docker,
+        container orchestration, and cloud platforms.
+      </p>
 
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
-  <p>GitHub: <a href="https://github.com/ethantongg">github.com/your-username</a></p>
+      <div class="tags">
+        <div class="tag">Cloud Computing</div>
+        <div class="tag">Docker</div>
+        <div class="tag">AWS</div>
+        <div class="tag">Backend Systems</div>
+        <div class="tag">FinTech</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Dockerized Nginx Multi-Service Deployment</strong> — Containerized
+            web services deployed on AWS using Docker and Docker Compose.</li>
+        <li><strong>Online Bookstore Management System</strong> — Full-stack application
+            with database-backed inventory and order management.</li>
+        <li><strong>Data Dashboards & Automation</strong> — Analytics and automation
+            projects focused on efficiency and visualization.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>
+        <strong>Contact</strong><br>
+        <span class="note">your-email@example.com</span>
+      </div>
+
+      <div>
+        <a href="https://github.com/ethantongg" target="_blank">GitHub</a>
+      </div>
+
+      <div class="note">
+        Served via Nginx in a Docker container on AWS
+      </div>
+    </footer>
+
+  </div>
 </body>
 </html>
