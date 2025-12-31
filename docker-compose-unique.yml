@@ -4,32 +4,32 @@ services:
     volumes:
       - ./sites/site1:/usr/share/nginx/html:ro
     ports:
-      - "8080:80"
+      - "8091:80"
 
   site2:
     image: nginx:stable-alpine
     volumes:
       - ./sites/site2:/usr/share/nginx/html:ro
     ports:
-      - "8081:80"
+      - "8092:80"
 
   site3:
     image: nginx:stable-alpine
     volumes:
       - ./sites/site3:/usr/share/nginx/html:ro
     ports:
-      - "8082:80"
+      - "8093:80"
 
   site4:
     image: nginx:stable-alpine
     volumes:
       - ./sites/site4:/usr/share/nginx/html:ro
     ports:
-      - "8083:80"
+      - "8094:80"
 
   site5:
     image: nginx:stable-alpine
     volumes:
       - ./sites/site5:/usr/share/nginx/html:ro
     ports:
-      - "8084:80"
+      - "8095:80"
